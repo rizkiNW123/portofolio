@@ -1,0 +1,95 @@
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.bghome{
+	background-color: #282c34 ;
+	background-position: center ;
+  background-size: cover;
+  height: auto;
+  position: relative;
+}
+.home{
+  height: auto;
+  display: flex;
+  justify-content:center ;
+  align-items: end;
+
+}
+.foto{
+  background-color: aliceblue;
+  animation: animasifoto 8s ease-in-out infinite 1s;
+  height: 250px;
+  width: auto;
+}
+@keyframes animasifoto{
+  0%{
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50%{
+    border-radius: 50% 70% 40% 50%/30% 60% 45% 80%;
+  }
+  100%{
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  
+}
+
+.tengah{
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+  width: 100%;
+}
+@keyframes slide {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(-100%);
+  }
+}
+.logo {
+  overflow: hidden;
+  padding: 20px 0;
+  white-space: nowrap;
+  position: relative;
+}
+.logo:hover .logo-slide{
+  animation-play-state: paused;
+}
+.logo-slide{
+  display: inline-block;
+  animation: 20s slide infinite linear;
+  margin-top: 10px;
+}
+.logo-slide img{
+  height: 75px;
+  margin: 0 25px;
+  
+}
+
+.imgc{
+  color: white;
+  font-size: 40px;
+  margin-left: 20px;
+}
+.imgc :hover{
+  background-color: #282c34;
+}
